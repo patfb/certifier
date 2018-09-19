@@ -45,4 +45,11 @@ if (program.thingN2) {
 
 console.log(mySet);
 
-exports.options = mySet;
+process.env.myArgs = Array.from(mySet);
+
+var Mocha = require("mocha");
+var mocha = new Mocha({});
+
+mocha.addFile("./test/myTest.js");
+
+mocha.run();

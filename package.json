@@ -2,7 +2,7 @@
   "name": "postcertifier",
   "version": "1.0.0",
   "description": "no description",
-  "main": "cli.js",
+  "main": "index.js",
   "scripts": {
     "test": "export fruit=apple && npm run childScript",
     "childScript": "mocha"
